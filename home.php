@@ -53,10 +53,10 @@
 
 	<script type="text/javascript">
 		function nwm() {
-			var x, i;
+			let x, i;
 			x = document.querySelectorAll("#menu > ul > li > ul");
 
-			var monthNum = new Array();
+			let monthNum = new Array();
 			monthNum["January"] = 0;
 			monthNum["February"] = 1;
 			monthNum["March"] = 2;
@@ -70,9 +70,9 @@
 			monthNum["November"] = 10;
 			monthNum["December"] = 11;
 
-			for (var a = 0; a < count; a++) {
-				var monthName = files[a]['fmonth'];
-				var num = monthNum[monthName];
+			for (let a = 0; a < count; a++) {
+				let monthName = files[a]['fmonth'];
+				let num = monthNum[monthName];
 
 				x[num + 4].innerHTML += '<li><a href="' + files[a]['path'] + '" title="' + files[a]['name'] +'">' + files[a]['name'] + '</a></li>';
 			}
